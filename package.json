@@ -1,13 +1,13 @@
 {
   "name": "largestop.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stopwords for 23 languages",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "prebuild": "cd db && sh unzip.sh",
     "build": "node build-index.js",
-    "prepublish": "yarn build",
+    "prepublish": "yarn build && cp db/README README-stopwords",
     "clean": "rm -rf db/stopwords"
   }
 }

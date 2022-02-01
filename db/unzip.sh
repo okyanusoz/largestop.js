@@ -1,2 +1,2 @@
 unzip stopwords.zip
-rm stopwords/README
+mv stopwords/README .
